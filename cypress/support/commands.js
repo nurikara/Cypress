@@ -14,7 +14,24 @@
 //
 //
 // -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
+Cypress.Commands.add('Login', (email, password) => { 
+
+    cy.visit('https://automationexercise.com/')
+    cy.get('.shop-menu > .nav > :nth-child(4)').click()
+    cy.get('[data-qa="login-email"]').type(email)
+    cy.get('[data-qa="login-password"]').type(password)
+    cy.get('[data-qa="login-button"]').click()
+
+ })
+
+ Cypress.Commands.add('amazonSearch', (productname) => {
+cy.visit('https://www.amazon.com.tr/')
+cy.get('#twotabsearchtextbox').type(productname)
+
+
+ })
+
+
 //
 //
 // -- This is a dual command --

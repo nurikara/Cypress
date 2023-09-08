@@ -9,10 +9,6 @@ describe('SuccestedElements', function () {
     
     });
 
-    it('Test Case 02', () => {
-        
-    });
-
 
 })
 
