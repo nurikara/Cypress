@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run_day_02": "npx cypress run --spec 'cypress/e2e/day_02/' --browser chrome",
+    "nuri": "npx cypress run --spec 'cypress/e2e/day_03/' --browser chrome --headed"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "cypress-xpath": "^2.0.1"
   },
   "devDependencies": {
-    "@4tw/cypress-drag-drop": "^2.2.4"
+    "@4tw/cypress-drag-drop": "^2.2.4",
+    "@faker-js/faker": "^8.0.2"
   }
 }
