@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run_day_02": "npx cypress run --spec 'cypress/e2e/day_02/' --browser chrome",
-    "nuri": "npx cypress run --spec 'cypress/e2e/day_03/' --browser chrome --headed"
+    "nuri": "npx cypress run --spec 'cypress/e2e/day_03/' --browser chrome --headed",
+"testdashBoard": "npx cypress run --record --key e427e018-6e3d-47c0-a37c-7cb58d6396d8",
+
+"dashBoard_day02": "npx cypress run --spec 'cypress/e2e/day_03/' --record --key e427e018-6e3d-47c0-a37c-7cb58d6396d8 "
+  
   },
   "author": "",
   "license": "ISC",
