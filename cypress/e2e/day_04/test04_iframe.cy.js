@@ -7,7 +7,7 @@ describe('iframes', function () {
         cy.frameLoaded('#mce_0_ifr')
         cy.iframe().find('p').clear()
 
-        cy.iframe().type('Nuri Baba')
+        cy.iframe().type('Nuri')
        
         cy.get('.large-4 > div > a').click()
     });

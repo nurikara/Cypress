@@ -16,11 +16,14 @@ describe('MultipleWindows', function () {
 
         cy.get('.example > a').then((element) => {
 
-const url = element.prop('href');
+        const url = element.prop('href');
+          
+        cy.visit(url)
 
-cy.visit(url)
+        
 
-        })
+
+})
 
 
         

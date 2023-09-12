@@ -11,5 +11,9 @@ module.exports = defineConfig({
     baseUrl: "http://www.amazon.com",
      
     projectId: "1jto35",
-  "video": false  },
+  "video": false ,
+  
+ // 'retries':2 
+
+},
 });
